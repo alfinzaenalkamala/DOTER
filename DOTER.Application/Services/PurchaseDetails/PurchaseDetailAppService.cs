@@ -33,7 +33,7 @@ namespace DOTER.Application.Services.PurchaseDetails
 
         public PuchaseDetailListDto GetPurchaseDetailById(int Id)
         {
-            var purchasedetail = _context.purchases.FirstOrDefault(w => w.Id == Id);
+            var purchasedetail = _context.purchaseDetails.FirstOrDefault(w => w.Id == Id);
             var purchasedetailDto = _mapper.Map<PuchaseDetailListDto>(purchasedetail);
             return purchasedetailDto;
         }
