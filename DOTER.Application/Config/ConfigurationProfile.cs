@@ -35,10 +35,14 @@ namespace DOTER.Application.Config
             // Purchase
             CreateMap<PurchaseDto, Purchase>();
             CreateMap<Purchase, PurchaseDto>();
+            CreateMap<PurchaseListDto, Purchase>();
+            CreateMap<Purchase, PurchaseListDto>();
             // PurchaseDetail
             CreateMap<PurchaseDetailDto, PurchaseDetail>();
             CreateMap<PurchaseDetail, PurchaseDetailDto>();
-          
+            CreateMap<PuchaseDetailListDto, PurchaseDetail>();
+            CreateMap<PurchaseDetail, PuchaseDetailListDto>();
+
 
         }
     }

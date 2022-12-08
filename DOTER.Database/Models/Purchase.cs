@@ -18,7 +18,7 @@ namespace DOTER.Database.Models
         public int ConsumerId { get; set; }
         [Required]
         public int BreederId { get; set; }
-        [Required]
+
         public DateTime DateTime { get; set; }
         public virtual Consumer? Consumer { get; set; }
         public virtual Breeder? Breeder{ get; set; }
